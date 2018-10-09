@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IphoneXTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xeN-pI-hbB"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZg-4p-AOU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="o8" translatesAutoresizingMaskIntoConstraints="NO" id="KkP-pZ-vgI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3V-Ir-FGu">
+                                <rect key="frame" x="20" y="607" width="335" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ykK-ti-3on"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lop-TS-fan">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orbi_logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="mN0-0v-HXq">
+                                        <rect key="frame" x="159" y="33" width="57" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="a4P-aS-rg7"/>
+                                            <constraint firstAttribute="height" constant="22" id="hOb-qQ-b7W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2I-cq-oU3">
+                                        <rect key="frame" x="14" y="23" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="BN6-di-ugG"/>
+                                            <constraint firstAttribute="width" constant="48" id="W9Y-FC-x9g"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_back"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-2N-AK6">
+                                        <rect key="frame" x="323" y="33" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="OeQ-dx-Fvn"/>
+                                            <constraint firstAttribute="width" constant="28" id="Ys9-MF-ZmL"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_help"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mN0-0v-HXq" firstAttribute="top" secondItem="lop-TS-fan" secondAttribute="top" constant="33" id="2CK-sv-wBz"/>
+                                    <constraint firstAttribute="height" constant="77" id="9DD-dy-Im9"/>
+                                    <constraint firstItem="o2I-cq-oU3" firstAttribute="leading" secondItem="lop-TS-fan" secondAttribute="leading" constant="14" id="AAT-dA-dsg"/>
+                                    <constraint firstItem="1mN-2N-AK6" firstAttribute="top" secondItem="lop-TS-fan" secondAttribute="top" constant="33" id="AYd-I6-SP9"/>
+                                    <constraint firstAttribute="trailing" secondItem="1mN-2N-AK6" secondAttribute="trailing" constant="24" id="leM-Lf-Kdc"/>
+                                    <constraint firstItem="o2I-cq-oU3" firstAttribute="top" secondItem="lop-TS-fan" secondAttribute="top" constant="23" id="pGU-J4-dXD"/>
+                                    <constraint firstItem="mN0-0v-HXq" firstAttribute="centerX" secondItem="lop-TS-fan" secondAttribute="centerX" id="pjR-jS-jqm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KkP-pZ-vgI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2Od-0y-cCH"/>
+                            <constraint firstItem="lop-TS-fan" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CI7-Ss-Qfl"/>
+                            <constraint firstItem="KkP-pZ-vgI" firstAttribute="bottom" secondItem="RZg-4p-AOU" secondAttribute="top" id="Ga7-W7-MXW"/>
+                            <constraint firstAttribute="trailing" secondItem="E3V-Ir-FGu" secondAttribute="trailing" constant="20" id="ULQ-Hp-Ceo"/>
+                            <constraint firstItem="KkP-pZ-vgI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="alm-Qa-yQA"/>
+                            <constraint firstItem="lop-TS-fan" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="sxK-gh-Gir"/>
+                            <constraint firstItem="KkP-pZ-vgI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ven-LF-LHU"/>
+                            <constraint firstItem="RZg-4p-AOU" firstAttribute="top" secondItem="E3V-Ir-FGu" secondAttribute="bottom" constant="20" id="vfk-2S-dsj"/>
+                            <constraint firstItem="E3V-Ir-FGu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xXM-lQ-8jN"/>
+                            <constraint firstItem="lop-TS-fan" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yM6-9A-pC6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.22660098522168"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="36" height="36"/>
+        <image name="ic_help" width="72" height="72"/>
+        <image name="o8" width="1080" height="1920"/>
+        <image name="orbi_logo_white" width="74" height="29"/>
+    </resources>
+</document>
